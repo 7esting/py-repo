@@ -12,19 +12,30 @@ def factorial(n: int):
     else:
         return n*factorial(n-1)
 
-# Test
-def calc_age(dob: int):
-    print(type(dob))
-    dob = int(dob)
-    return datetime.date.today().year - dob
+"""
+Fibonacci Sequence: (After the 1, 1, the next number is the sum of the two
+previous numbers.
+ex. 1 + 1 = 2, 1 + 2 = 3
+1, 1, 2, 3, 5, 8, ...
+
+Goal: Write function to return the nth term of Fibonacci Sequence.
+- Fast
+- Clearly written
+- Rock solid 
+"""
+def fibonacci(n):
+    if n == 1:
+        return 1
+    elif n > 2:
+        return fibonacci(n-1) + fibonacci(n-2)
 
 def main():
     """"Main program function calls."""
     x_factorial = factorial(5)
     print(x_factorial)
 
-    resp = input("Year of Birth (yyyy): ")
-    print(calc_age(resp))
+    for n in range(1, 11):
+        print(f"{n} : {fibonacci(n)}")
 
 # Application entry point
 if __name__ == '__main__':

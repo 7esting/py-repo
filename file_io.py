@@ -77,7 +77,7 @@ if __name__ == "__main__":
         FULL_PATH_DATA_DIR = os.getcwd()  # Returns full path to data directory
 
         if os.path.isdir(FULL_PATH_DATA_DIR):  # Return True if directory exists
-            # Assigns full path to file
+            # Appends full path to file
             TXT_FILE = os.path.join(FULL_PATH_DATA_DIR, TXT_FILE)
 
         ## Open file mode:

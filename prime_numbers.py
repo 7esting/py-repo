@@ -65,45 +65,51 @@ def is_prime_v3(n):
             return False
     return True
 
-# ===== Test Function
-# for n in range(1, 21):
-# print(n, is_prime_v1(n))
+def main():
+    """Call all functions from main"""
+    # ===== Test Function
+    # for n in range(1, 21):
+    # print(n, is_prime_v1(n))
 
-# Test1: Computation speed
-t0 = time.time()
-for n in range(1, 100000):
-    is_prime_v1(n)
-t1 = time.time()
-print(f"Time required: {t1 - t0}") # Time required: 27.473999977111816
+    # Test1: Computation speed
+    t0 = time.time()
+    for n in range(1, 100000):
+        is_prime_v1(n)
+    t1 = time.time()
+    print(f"Time required without optimizations: {t1 - t0}") # Time required: 27.473999977111816
 
-# Test 2: Reduce number of divisors checked in the for-loop, we will only test
-# all devisors from 2 through sqrt(N).
-# 36 = 1 x 36
-#    = 2 x 18
-#    = 3 x 12
-#    = 4 x 9
-#    = 6 x 6  # is a perfect sqrt of 36
-#    = 9 x 4
-#    = 12 x 3
-#    = 18 x 2
-#    = 36 x 1
-#
-# To improve algorithm,
-# n = 1 x
-#   = a x b
-#   = ...
-#   = sqrt(n) * sqrt(n) # sqrt(36) * sqrt(36)
+    # Test 2: Reduce number of divisors checked in the for-loop, we will only test
+    # all devisors from 2 through sqrt(N).
+    # 36 = 1 x 36
+    #    = 2 x 18
+    #    = 3 x 12
+    #    = 4 x 9
+    #    = 6 x 6  # is a perfect sqrt of 36
+    #    = 9 x 4
+    #    = 12 x 3
+    #    = 18 x 2
+    #    = 36 x 1
+    #
+    # To improve algorithm,
+    # n = 1 x
+    #   = a x b
+    #   = ...
+    #   = sqrt(n) * sqrt(n) # sqrt(36) * sqrt(36)
 
-# Test2: Computation speed
-t0 = time.time()
-for n in range(1, 100000):
-    is_prime_v2(n)
-t1 = time.time()
-print(f"Time required: {t1 - t0}") # Time required: 0.2049999237060547
+    # Test2: Computation speed
+    t0 = time.time()
+    for n in range(1, 100000):
+        is_prime_v2(n)
+    t1 = time.time()
+    print(f"Time required with some optimization: {t1 - t0}") # Time required: 0.2049999237060547
 
-# Test3: Computation speed
-t0 = time.time()
-for n in range(1, 100000):
-    is_prime_v3(n)
-t1 = time.time()
-print(f"Time required: {t1 - t0}") # Time required: 0.11299991607666016
+    # Test3: Computation speed
+    t0 = time.time()
+    for n in range(1, 100000):
+        is_prime_v3(n)
+    t1 = time.time()
+    print(f"Time required with more optimazation: {t1 - t0}") # Time required: 0.11299991607666016
+
+# Application entry point
+if __name__ == '__main__':
+    main()
