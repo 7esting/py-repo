@@ -41,123 +41,134 @@ def main():
 if __name__ == "__main__":
     main()
 
-# # This section will be removed once the functions are created
-#     # TODO: Put file io sections into their own funciton
-#     #       - Text file io function
-#     #       - Binary file io funciton
-#     #       - CSV file io funciton
-#     #       - JSON file io function
-#     # ---------------------------- Text File IO -------------------------------
-#     print(f"\n---------- Text IO ----------")
-#     # Text Files:
-#     # - Plain Text
-#     # - XML
-#     # - JSON
-#     # - Source Code
-#
-#     ## List to write out to myfile.
-#     txt_to_myfile = ["Plain Text", "XML", "JSON", "Source Code"]
-#
-#     ## See help on opening files
-#     # help(open)
-#     """With the "With" statement, you get better syntax and exceptions handling.
-#
-#     "The with statement simplifies exception handling by encapsulating common
-#     preparation and cleanup tasks."
-#
-#     In addition, it will automatically close the file. The with statement provides
-#     a way for ensuring that a clean-up is always used.:"""
-#     try:
-#         ## Open a text file for writting, appending, or read-only
-#         # Specify full path instead of relative path.
-#         # Append dir ending "\\" to escape any non-ascii
-#         cwd_full_path = os.getcwd()  # Returns current working directory
-#         # Appended directory where txt file will be stored
-#         # data_dir = os.chdir(cwd_full_path + '\\data') # Does not work
-#         txt_file = cwd_full_path + "\\data\\foo.txt"
-#         ## Open file mode:
-#         #  'w' open for writing, truncating the file first
-#         #  '+' open a disk file for updating (reading and writing)
-#         #  'a' open for writing, appending to the end of the file if it exists
-#         #  'r' read only
-#         with open(txt_file, mode="w+", encoding="utf-8") as myfile:
-#             ## Append Mode only - cannot read file.
-#             # with open(cur_dir + txt_file, mode="a", encoding="utf-8") as myfile:
-#             # with open(cur_dir + txt_file, mode="a+", encoding="utf-8") as myfile:
-#             # File Info
-#             print("Name of the file:", myfile.name.split('\\')[-1])
-#             print("Mode of the file:", myfile.mode)
-#             print("Mode of the file:", myfile.encoding)
-#             print("Tell the byte at which the file cursor is:", myfile.tell())
-#             # Write to file
-#             for line in txt_to_myfile:
-#                 # file.write(line + "\n")
-#                 print(line, file=myfile)
-#                 print(10 * "=", file=myfile)
-#             # Read file
-#             print("Tell the byte at which the file cursor is:", myfile.tell())
-#             myfile.seek(0)
-#             print("Tell the byte at which the file cursor is:", myfile.tell())
-#
-#             # Test file existence try block
-#             if os.path.exists(myfile.name):
-#                 print(f"The file {myfile.name} exist!")
-#                 # myfile.close() # Uncomment to test IO exceptions
-#                 # os.remove(myfile.name) # Uncomment to test IO exceptions
-#             else:
-#                 print(f"The text file does not exist!")
-#
-#             print(myfile.read())  # Causes an error ir file opened for append only, except with "a+"
-#             print("Tell the byte at which the file cursor is:", myfile.tell())
-#             # myfile.close() # Uncomment to test IO exceptions
-#             print("File closed?", myfile.closed)
-#     except (FileNotFoundError, IOError) as e:
-#         print(f"{myfile.name} not found or not readable!\n{e}")
-#     except Exception as e2:
-#         print(f"{myfile.name} was closed or deleted!\n{e2}")
-#         # Write error to file_io_err.log
-#
-#     finally:  # The finally always gets executed.
-#         # Close opend file
-#         # myfile.close()
-#
-#         print("File closed?", myfile.closed)
-#     # ---------------------------- Binary File IO -------------------------------
-#     print(f"---------- Binary IO ----------")
-#     # Binary Files:
-#     # - Compiled code
-#     # - App data
-#     # - Media files
-#     #   ~ images
-#     #   ~ audio
-#     #   ~ video
-#
-#     mybin_file = os.getcwd() + "\\data\\foo.bin"
-#     # Use relative path as file location, when you specify only the file name
-#     binary_file = open(mybin_file, "wb+")
-#     # File Info
-#     print("Name of the file: ", binary_file.name)
-#     print("Closed or not : ", binary_file.closed)
-#     print("Opening mode : ", binary_file.mode)
-#     # print("Softspace flag : ", binary_file.softspace)
-#
-#     for i in range(5, 0, -1):
-#         # Write to binary file
-#         text = "\n" + str(i) + ". " + "Hello 123"
-#         encoded = text.encode("utf-8")
-#         binary_file.write(encoded)
-#
-#     # Read file
-#     binary_file.seek(0)
-#     binary_data = binary_file.read()
-#     print("binary:", binary_data)
-#     text = binary_data.decode("utf-8")
-#     print("Decoded data:", text)
-#     # print("Softspace flag : ", binary_file.softspace)
-#
-#     # Close opend file
-#     binary_file.close()
-#
+# This section will be removed once the functions are created
+    # TODO: Put file io sections into their own funciton
+    #       - Text file io function
+    #       - Binary file io funciton
+    #       - CSV file io funciton
+    #       - JSON file io function
+    # ---------------------------- Text File IO -------------------------------
+    print(f"\n---------- Text IO ----------")
+    # Text Files:
+    # - Plain Text
+    # - XML
+    # - JSON
+    # - Source Code
+
+    ## List to write out to myfile.
+    txt_to_myfile = ["Plain Text", "XML", "JSON", "Source Code"]
+
+    ## See help on opening files
+    # help(open)
+    """With the "With" statement, you get better syntax and exceptions handling.
+
+    "The with statement simplifies exception handling by encapsulating common
+    preparation and cleanup tasks."
+
+    In addition, it will automatically close the file. The with statement provides
+    a way for ensuring that a clean-up is always used.:"""
+    try:
+        ## Open a text file for writting, appending, or read-only
+        # Specify full path instead of relative path.
+        TXT_FILE = 'txt_file_io.txt'
+        DATA_DIR = '\\data'
+        FULL_PATH_CUR_DIR = os.getcwd()  # Returns current working directory
+        os.chdir(FULL_PATH_CUR_DIR + DATA_DIR) # cd /change/to/data/dir
+        FULL_PATH_DATA_DIR = os.getcwd()  # Returns full path to data directory
+
+        if os.path.isdir(FULL_PATH_DATA_DIR):  # Return True if directory exists
+            # Assigns full path to file
+            TXT_FILE = os.path.join(FULL_PATH_DATA_DIR, TXT_FILE)
+
+        ## Open file mode:
+        #  'w' open for writing, truncating the file first
+        #  '+' open a disk file for updating (reading and writing)
+        #  'a' open for writing, appending to the end of the file if it exists
+        #  'r' read only
+        with open(TXT_FILE, mode="w+", encoding="utf-8") as myfile:
+            # Verify file exists prior to reading/writting
+            if os.path.isfile(TXT_FILE):  # Return True if file exists
+                print(f"\nFile ==> {myfile.name} was created!")
+
+            ## Append Mode only - cannot read file.
+            # with open(cur_dir + txt_file, mode="a", encoding="utf-8") as myfile:
+            # with open(cur_dir + txt_file, mode="a+", encoding="utf-8") as myfile:
+            # File Info
+            print("Name of the file:", myfile.name.split('\\')[-1])
+            print("Mode of the file:", myfile.mode)
+            print("Mode of the file:", myfile.encoding)
+            print("Tell the byte at which the file cursor is:", myfile.tell())
+            # Write to file
+            for line in txt_to_myfile:
+                # file.write(line + "\n")
+                print(line, file=myfile)
+                print(10 * "=", file=myfile)
+            # Read file
+            print("Tell the byte at which the file cursor is:", myfile.tell())
+            myfile.seek(0)
+            print("Tell the byte at which the file cursor is:", myfile.tell())
+
+            # Test file existence try block
+            if os.path.exists(myfile.name):
+                print(f"The file {myfile.name} exists!")
+                # myfile.close() # Uncomment to test IO exceptions
+                # os.remove(myfile.name) # Uncomment to test IO exceptions
+            else:
+                print(f"The text file does not exist!")
+
+            print(myfile.read())  # Causes an error ir file opened for append only, except with "a+"
+            print("Tell the byte at which the file cursor is:", myfile.tell())
+            # myfile.close() # Uncomment to test IO exceptions
+            #print("File closed?", myfile.closed)
+    except (FileNotFoundError, IOError) as e:
+        print(f"{myfile.name} not found or not readable!\n{e}")
+    except Exception as e2:
+        print(f"{myfile.name} was closed or deleted!\n{e2}")
+        # Write error to file_io_err.log
+
+    finally:  # The finally always gets executed.
+        # Close file
+        # myfile.close()
+
+        print("File closed?", myfile.closed)
+    # ---------------------------- Binary File IO -------------------------------
+    print(f"---------- Binary IO ----------")
+    # Binary Files:
+    # - Compiled code
+    # - App data
+    # - Media files
+    #   ~ images
+    #   ~ audio
+    #   ~ video
+
+    BIN_FILE = 'bin_file_io.txt'
+    DATA_DIR = '\\data'
+    # From current working directory change to data dir
+    os.chdir('..' + DATA_DIR)
+    binary_file = open(BIN_FILE, "wb+")
+    # File Info
+    print("Name of the file: ", binary_file.name)
+    print("Closed or not : ", binary_file.closed)
+    print("Opening mode : ", binary_file.mode)
+    # print("Softspace flag : ", binary_file.softspace)
+
+    for i in range(5, 0, -1):
+        # Write to binary file
+        text = "\n" + str(i) + ". " + "Hello 123"
+        encoded = text.encode("utf-8")
+        binary_file.write(encoded)
+
+    # Read file
+    binary_file.seek(0)
+    binary_data = binary_file.read()
+    print("binary:", binary_data)
+    text = binary_data.decode("utf-8")
+    print("Decoded data:", text)
+    # print("Softspace flag : ", binary_file.softspace)
+
+    # Close opend file
+    binary_file.close()
+
 #     # ---------------------------- CSV File IO -------------------------------
 #     print(f"---------- CSV File IO ----------")
 #     mycsv_file = os.getcwd() + "\\data\\Google Stock Market Data - google_stock_data.csv"
