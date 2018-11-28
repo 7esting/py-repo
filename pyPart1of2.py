@@ -54,8 +54,17 @@ type(varName)
 type(objName)
 """
 
-# ---------------------------- Import Libraries/Modules -------------------------------
-# Import classes from your custom package
+# ----------- Import Packages, and/or Modules: Classes, & Functions -----------
+"""
+Library : It is a collection of modules.
+          (Library either contains built in modules(written in C) + modules written in
+          python).
+
+Module : Each of a set of standardized parts or independent units that can be used to
+         construct a more complex structure.
+
+Package is basically a directory with files.
+"""
 # from <dir.file = package.module> import <class_name | method (case sensitive)>
 import math
 from pprint import pprint

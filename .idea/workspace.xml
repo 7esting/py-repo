@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="720a341f-4e21-4dfe-b46d-64f20c0ed0aa" name="Default Changelist" comment="" />
+    <list default="true" id="720a341f-4e21-4dfe-b46d-64f20c0ed0aa" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_io.py" beforeDir="false" afterPath="$PROJECT_DIR$/file_io.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main_for_while.py" beforeDir="false" afterPath="$PROJECT_DIR$/class_call.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyPart1of2.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyPart1of2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/recursion.py" beforeDir="false" afterPath="$PROJECT_DIR$/recursion.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,17 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/recursion.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/bin/pymongo_prg.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="864">
-              <caret line="129" column="42" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="44" />
+            <state relative-caret-position="582">
+              <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -34,10 +31,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyPart1of2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9250">
-              <caret line="370" column="19" selection-start-line="370" selection-start-column="19" selection-end-line="370" selection-end-column="19" />
+            <state relative-caret-position="295">
+              <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" selection-end-column="79" />
               <folding>
-                <element signature="e#1930#1941#0" expanded="true" />
+                <element signature="e#1938#1949#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/file_io.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-320">
+              <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+              <folding>
+                <element signature="e#110#119#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -76,18 +85,17 @@
         <option value="$PROJECT_DIR$/Person.py" />
         <option value="$PROJECT_DIR$/bin/pymongo_prg.py" />
         <option value="$PROJECT_DIR$/exception_ref.py" />
+        <option value="$PROJECT_DIR$/prime_numbers.py" />
+        <option value="$PROJECT_DIR$/pyPart1of2.py" />
         <option value="$PROJECT_DIR$/recursion.py" />
         <option value="$PROJECT_DIR$/file_io.py" />
-        <option value="$PROJECT_DIR$/pyPart1of2.py" />
-        <option value="$PROJECT_DIR$/prime_numbers.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-9" />
-    <option name="y" value="-9" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1932" />
     <option name="width" value="1938" />
-    <option name="height" value="1170" />
+    <option name="height" value="1102" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -95,7 +103,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -107,6 +114,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -138,7 +146,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.prime_numbers">
+  <component name="RunManager" selected="Python.file_io">
     <configuration name="Person" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyRefCodeNotes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -297,8 +305,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.prime_numbers" />
         <item itemvalue="Python.recursion" />
+        <item itemvalue="Python.prime_numbers" />
         <item itemvalue="Python.exception_ref" />
         <item itemvalue="Python.pymongo_prg" />
         <item itemvalue="Python.Person" />
@@ -318,7 +326,7 @@
     </task>
     <servers />
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="2">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -328,22 +336,23 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="-9" width="1938" height="1170" extended-state="7" />
+    <frame x="1911" y="-9" width="1938" height="1098" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518305" visible="true" weight="0.11439312" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49518305" visible="true" weight="0.11439312" />
       <window_info id="Structure" order="1" sideWeight="0.50481695" side_tool="true" weight="0.16094674" />
       <window_info id="Favorites" order="2" sideWeight="0.50289017" side_tool="true" weight="0.16094674" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32963374" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.46564102" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4651163" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3986711" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32741398" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32668883" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32923076" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.3220513" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.50036955" side_tool="true" weight="0.32852387" />
-      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49963045" weight="0.4625641" />
+      <window_info anchor="bottom" id="Python Console" order="10" sideWeight="0.49963045" weight="0.46179402" />
       <window_info anchor="bottom" id="Docker" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Pylint" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -460,10 +469,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/my_log.py">
+    <entry file="file://$PROJECT_DIR$/menu_prg.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-45">
-          <caret line="2" column="11" selection-end-line="2" selection-end-column="11" />
+        <state relative-caret-position="239">
+          <caret line="70" column="45" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ssh_config.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2966" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vars_if_while.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web_scraping.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -477,35 +507,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/menu_prg.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="239">
-          <caret line="70" column="45" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ssh_config.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2966" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main_for_while.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-351">
-          <caret line="6" column="80" selection-start-line="5" selection-end-line="6" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vars_if_while.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="81" lean-forward="true" selection-start-line="81" selection-end-line="81" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/date_time.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="275">
+        <state relative-caret-position="-1025">
           <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
           <folding>
             <element signature="e#154#183#0" expanded="true" />
@@ -513,28 +517,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/file_io.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="454">
-          <caret line="224" column="41" lean-forward="true" selection-start-line="224" selection-start-column="41" selection-end-line="224" selection-end-column="41" />
-          <folding>
-            <element signature="e#110#119#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web_scraping.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <folding>
-            <element signature="e#0#10#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/prime_numbers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
+        <state relative-caret-position="-1975">
           <caret line="18" column="13" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -542,27 +527,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/recursion.py">
+    <entry file="file://$PROJECT_DIR$/bin/pymongo_prg.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <caret line="129" column="42" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_log.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-950">
+          <caret line="2" column="11" selection-end-line="2" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/class_call.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="15" column="13" lean-forward="true" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pyPart1of2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9250">
-          <caret line="370" column="19" selection-start-line="370" selection-start-column="19" selection-end-line="370" selection-end-column="19" />
+        <state relative-caret-position="295">
+          <caret line="56" lean-forward="true" selection-start-line="56" selection-end-line="56" selection-end-column="79" />
           <folding>
-            <element signature="e#1930#1941#0" expanded="true" />
+            <element signature="e#1938#1949#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/bin/pymongo_prg.py">
+    <entry file="file://$PROJECT_DIR$/recursion.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="864">
-          <caret line="129" column="42" selection-start-line="129" selection-start-column="25" selection-end-line="129" selection-end-column="44" />
+        <state relative-caret-position="582">
+          <caret line="29" column="26" lean-forward="true" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_io.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-320">
+          <caret line="25" lean-forward="true" selection-start-line="25" selection-end-line="25" />
+          <folding>
+            <element signature="e#110#119#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

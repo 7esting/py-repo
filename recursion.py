@@ -1,8 +1,10 @@
 """
 Recursion: factorials, Fibonacci, & Memorization
 """
+# ----------- Import Packages, and/or Modules: Classes, & Functions -----------
 import datetime
 
+# --------------------------- Function Definitions ----------------------------
 # Factorial function
 def factorial(n: int):
     if n == 1:
@@ -17,9 +19,13 @@ def calc_age(dob: int):
     return datetime.date.today().year - dob
 
 def main():
+    """"Main program function calls."""
     x_factorial = factorial(5)
     print(x_factorial)
-if __name__ == '__main__':
-    main()
+
     resp = input("Year of Birth (yyyy): ")
     print(calc_age(resp))
+
+# Application entry point
+if __name__ == '__main__':
+    main()
