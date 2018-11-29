@@ -84,7 +84,7 @@ def fibonacci_memorization_v1(n):
 # Memorization method 2: Using Python builtin tool lru_cache decorator
 # ~  Update fibonacci(n) function to use this decorator
 
-
+# ------------------------------- Main Function -------------------------------
 def main():
     """"Main program function calls."""
     x_factorial = factorial(5)
@@ -105,6 +105,6 @@ def main():
     for n in range(1, 51):
         print(fibonacci(n+1) / fibonacci(n))
 
-# Application entry point
+# ------------------------ Main Application Entry Point -----------------------
 if __name__ == '__main__':
     main()

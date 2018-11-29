@@ -24,6 +24,7 @@ def get_files(folder):
         elif os.path.isdir(full_item):
             yield from get_files(full_item)
 
+# ------------------------------- Main Function -------------------------------
 def main():
     """Main program function calls."""
     print("\n--------------- Program Started! ---------------\n")
@@ -37,7 +38,7 @@ def main():
     for i in yield_gen:
         print(i)
 
-# Application entry point
+# ------------------------ Main Application Entry Point -----------------------
 if __name__ == "__main__":
     main()
 

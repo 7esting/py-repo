@@ -1,14 +1,3 @@
-
-# ------------------------ Import Modules/Libraries ---------------------------
-#from pymongo import MongoClient
-import pymongo
-# ------------------------- MongoDB Connection Str ----------------------------
-conn_str = 'mongodb://localhost:27017'
-client = pymongo.MongoClient(conn_str)
-
-# Create database 'the_small_bookstore' in MongoDB
-db = client.the_small_bookstore
-
 """
 BSON /ˈbiːsən/ is a computer data interchange format used mainly as a data storage
 and network transfer format in the MongoDB database. It is a binary form for
@@ -22,20 +11,50 @@ to facilitate scanning. In some cases, BSON will use more space than JSON due
 to the length prefixes and explicit array indices.
 """
 
+# ----------- Import Packages, and/or Modules: Classes, & Functions -----------
+#from pymongo import MongoClient
+import pymongo
+from config_settings import db_config as db_conn
+import datetime, pytz
+
+# --------------------------- Function Definitions ----------------------------
+
+def time_stamp():
+    """Returns timestamp in ISO-8601 form '2016-11-16T14:31:18.130822-08:00'
+    Requires import datetime, pytz"""
+    utc_now = pytz.utc.localize(datetime.datetime.utcnow())
+    pst_now = utc_now.astimezone(pytz.timezone("America/Los_Angeles"))
+    #return utc_now.isoformat()
+    return pst_now.isoformat()
+
+# ------------------------- MongoDB Connection Str ----------------------------
+# conn_str = 'mongodb://localhost:27017'
+# client = pymongo.MongoClient(conn_str)
+
+# Create database 'the_small_bookstore' in MongoDB
+# db = client.the_small_bookstore
+
+client = pymongo.MongoClient(db_conn.DATABASE_CONFIG['MONGO_URI'])
+dbname = db_conn.DATABASE_CONFIG['MONGO_DB1']
+db = client[dbname]
+
+# db.<collection-name>.count()
 print(f"db.books.count: {db.books.count()}")
 
-if db.books.count() > 0:
+if db.books.count() >= 0:
     # Drop 'books' collection
     db.books.drop()
+    print(f"Books collection has been dropped! {db.books.count()}")
 
 # Create or insert dict. into collection only if the dict. doesn't already exist!
 # Adds dictionaries/documents in 'books' collection
 if db.books.count() == 0:
     print("Inserting data")
     # insert some data...
-    r = db.books.insert_one({'title': 'The third book', 'isbn': '73738584947384'})
+    r = db.books.insert_one({'title': 'Harry Potter', 'isbn': '73738584947384'})
     print(r, type(r))
     r = db.books.insert_one({'title': 'The forth book', 'isbn': '181819884728473'})
+
     print(r.inserted_id)
     db.books.insert_one({'title': 'Playboy', 'Issue': 'December 2018'})
 else:
@@ -108,36 +127,54 @@ Movies = {"title": "Minority Report",
 			"actors": ["Tom Curise", "Colin Farrell", "Samantha Morton", "Max von Sydow"],
 			"is_awesome": True, "budget": 102000000, "cinematographer": "Janusz Kami\\u044ski"}
 
-# Create a second database 'business'
-db_business = client.business
-
 # Create or insert dict. into collection only if the dict. doesn't already exist!
-if (db_business.dictionary_collection_doc.count() < 1 and
-        db_business.dictionary_collection_movie.count() < 1):
+if (db.dictionary_collection_doc.count() < 1 and
+        db.dictionary_collection_movie.count() < 1):
     # Create 'dictionary_collection_doc' collection and insert dictionary/doc
-    doc = db_business.dictionary_collection_doc.insert_one(my_dictionary)
+    doc = db.dictionary_collection_doc.insert_one(my_dictionary)
 
-    doc = db_business.dictionary_collection_doc.find_one({'dict': '*'})
+    doc = db.dictionary_collection_doc.find_one({'dict': '*'})
     print(f"Global Search: {doc}")
-    doc = db_business.dictionary_collection_doc.find_one({'key 1': 'Value 1'})
+    doc = db.dictionary_collection_doc.find_one({'key 1': 'Value 1'})
     print(f"Specific string search: {doc}")
 
     # Create 'dictionary_collection_movie' collection and insert dictionary/doc
-    movie_doc = db_business.dictionary_collection_movie.insert_one(Movies)
+    movie_doc = db.dictionary_collection_movie.insert_one(Movies)
 else:
     print("Records already in 'business' database.")
     #doc = db_business.dictionary_collection_doc.find_one({'dict': '*'})
     doc_query = {"dict": {"$regex": "^.*.$"}} # Search in sub-dict (not working)
     #doc_query = {"key 1": {"$regex": "^V.*1$" }}
-    doc_cursor = db_business.dictionary_collection_doc.find(doc_query)
+    doc_cursor = db.dictionary_collection_doc.find(doc_query)
     print(f"Global Search: {type(doc_cursor)}")
     for doc in doc_cursor:
         print(f"Global Search: {doc}")
 
-    doc = db_business.dictionary_collection_doc.find_one({'key 1': 'Value 1'})
+    doc = db.dictionary_collection_doc.find_one({'key 1': 'Value 1'})
     print(f"Specific string search: {type(doc)}")
 
-# Drop 'business' database by dropping all of it's collections
-# db_business.dictionary_collection_doc.drop()
-# db_business.dictionary_collection_movie.drop()
+# Drop 'library_members' database by dropping all of it's collections
+# db.dictionary_collection_doc.drop()
+# db.dictionary_collection_movie.drop()
+
+dictList = [ {'FirstName': 'Michael', 'LastName': 'Kirk', 'SSID': '224567', "Date Added": time_stamp()},
+{'FirstName': 'Linda', 'LastName': 'Matthew', 'SSID': '123456', "Date Added": time_stamp()},
+{'FirstName': 'Sandra', 'LastName': 'Parkin', 'SSID': '123456', "Date Added": time_stamp()},
+{'FirstName': 'Bob', 'LastName': 'Henry', 'SSID': '666666', "Date Added": time_stamp()},
+{'FirstName': 'Silvia', 'LastName': 'Perkin', 'SSID': '676767', "Date Added": time_stamp()}]
+
+# Create a second database 'library_members'
+dbname = db_conn.DATABASE_CONFIG['MONGO_DB2']
+db = client[dbname]
+
+if db.members.count() >= 0:
+    # Drop 'members' collection
+    db.members.drop()
+    print(f"Members collection has been dropped! {db.members.count()}")
+
+# Use for loop to read and insert from a dictionary
+for member in dictList:
+    r = db.members.insert_one(member)
+
+
 # -------------------------------- End of File --------------------------------

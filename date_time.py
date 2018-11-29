@@ -1,10 +1,11 @@
 #!/usr/bin/env PyRefCodeNotes
 
 # ----------- Import Packages, and/or Modules: Classes, & Functions -----------
-from datetime import datetime
+#from datetime import datetime
 from datetime import date
-from datetime import time as tiempo
+import datetime
 import time as t
+import pytz
 
 # --------------------------- Function Definitions ----------------------------
 # Test
@@ -13,18 +14,26 @@ def calc_age(dob: int):
     dob = int(dob)
     return datetime.date.today().year - dob
 
+# Returns timestamp in this form '2016-11-16T14:31:18.130822-08:00'
+# Requires import datetime, pytz
+def time_stamp():
+	utc_now = pytz.utc.localize(datetime.datetime.utcnow())
+	pst_now = utc_now.astimezone(pytz.timezone("America/Los_Angeles"))
+    #return utc_now.isoformat()
+	return pst_now.isoformat()
+
 def main():
-    print("---------- Date and Time -----------")
-    gvr = datetime(1970,12, 25)
+    print(f"---------- Current Timestamp => {time_stamp()} -----------")
+    gvr = datetime.datetime(1970,12, 25)
     dtf ="{:%A, %B %d, %Y}"
     today = date.today()
     str_date = "01/14/1974"
     print(gvr)
     print(dtf.format(gvr))
     print(f"Today\'s date: {today}")
-    print(f"Current date and time: {datetime.now()}")
+    print(f"Current date and time: {datetime.datetime.now()}")
     print(f"Day of the week Mon = 0: {date.weekday(today)}")
-    print(datetime.strptime(str_date, "%m/%d/%Y"))
+    print(datetime.datetime.strptime(str_date, "%m/%d/%Y"))
 
     print(date.today()) # datetime.date(2018, 11, 19)
     print(date.today().day) # 19
@@ -49,7 +58,7 @@ def main():
     # Time manipulation
     #print(tiempo.tzinfo)
     #print(tiempo.tzname())
-    print(tiempo(14,30,59))
+    print(datetime.date(2001, 12, 25))
     ##print(tiempo.hour)
 
     print(f"Time: {t.time()}")
