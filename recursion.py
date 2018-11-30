@@ -3,10 +3,19 @@ Recursion: factorials, Fibonacci, & Memorization
 """
 # ----------- Import Packages, and/or Modules: Classes, & Functions -----------
 from functools import lru_cache # Least Recently Used Cache
+from tqdm import tqdm, tgrange # https://github.com/tqdm/tqdm/wiki/How-to-make-a-great-Progress-Bar
 import datetime
+from time import sleep
+import timeit
 import math
 
 # --------------------------- Function Definitions ----------------------------
+# For tqdm progress bar
+def dosomething(buf):
+    """Do something with the content of a file"""
+    sleep(0.01)
+    pass
+
 # Factorial function
 def factorial(n: int):
     if n == 1:
@@ -91,8 +100,9 @@ def main():
     print(x_factorial)
 
     # Runs forever! Unless we use lru_cache decorator
-    # for n in range(1, 1001):
-    #     print(f"{n} : {fibonacci(n)}")
+    for n in tqdm(range(1, 100), desc='Fibonacci', unit=' terms', ascii=True):
+        #fibonacci(n)
+        print(f"{n} : {fibonacci(n)}")
 
     # Test with non-int values
     #print(fibonacci("one"))
@@ -102,8 +112,10 @@ def main():
     #     print(f"{n} : {fibonacci_memorization_v1(n)}")
 
     # The golden ratio, by taking the ratio of fibonacci consecutive terms
-    for n in range(1, 51):
-        print(fibonacci(n+1) / fibonacci(n))
+    # fibonacci_term_counter = 0
+    # for n in tqdm(range(1, 51), total=fibonacci_term_counter, unit="fibonacci_terms"):
+    #     fibonacci_term_counter += 1
+    #     print(f"{n} : {fibonacci(n+1) / fibonacci(n)}")
 
 # ------------------------ Main Application Entry Point -----------------------
 if __name__ == '__main__':
