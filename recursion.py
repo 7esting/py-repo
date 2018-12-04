@@ -102,7 +102,8 @@ def main():
     # Runs forever! Unless we use lru_cache decorator
     for n in tqdm(range(1, 100), desc='Fibonacci', unit=' terms', ascii=True):
         #fibonacci(n)
-        print(f"{n} : {fibonacci(n)}")
+        tqdm.write(f"{n} : {fibonacci(n)}")
+        #sleep(0.01)
 
     # Test with non-int values
     #print(fibonacci("one"))

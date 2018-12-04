@@ -45,8 +45,8 @@ def global_init():
 
 # ------------------------- MongoDB Connection Str ----------------------------
 # If database does not exist it will get created
-dbname = db_conn.DATABASE_CONFIG['MONGO_DB1']
-print(type(dbname))
+dbname = db_conn.DATABASE_CONFIG['MONGO_DB2']
+print(f"{dbname} : {type(dbname)}")
 print(type(db_conn.DATABASE_CONFIG['MONGO_URI']))
 
 # MongoEngine.connect db connection string registration
@@ -54,7 +54,7 @@ print(type(db_conn.DATABASE_CONFIG['MONGO_URI']))
 mongoengine.connect(db=dbname, host=db_conn.DATABASE_CONFIG['MONGO_URI'])
 
 # Class name ==> Collection name.  Overridden by meta {..}
-class Users(mongoengine.Document):
+class Members(mongoengine.Document):
     username = mongoengine.StringField(required=True)
     email = mongoengine.StringField(required=True)
     create_date = mongoengine.DateTimeField(default=time_stamp)
@@ -67,7 +67,7 @@ class Users(mongoengine.Document):
     # Uncomment if not using mongoengine.connect(...)
     # meta = {
     #     'db_alias': 'directory',
-    #     'collection': 'staff'
+    #     'collection': 'members'
     # }
 
 # ------------------------------- Main Function -------------------------------
@@ -90,8 +90,8 @@ def main():
 
     # Instantiate Users objects
     # usr1: <type hint>
-    usr1: object = Users(username = 'jplunkett', email = 'jplunkett@raiders.com').save()
-    usr2 = Users(username = 'msanchez', email = 'msanchez@jets.com')
+    usr1: object = Members(username = 'jplunkett', email = 'jplunkett@raiders.com').save()
+    usr2 = Members(username = 'msanchez', email = 'msanchez@jets.com')
     usr2.save()
 
 # ------------------------ Main Application Entry Point -----------------------

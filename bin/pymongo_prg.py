@@ -157,24 +157,33 @@ else:
 # db.dictionary_collection_doc.drop()
 # db.dictionary_collection_movie.drop()
 
-dictList = [ {'FirstName': 'Michael', 'LastName': 'Kirk', 'SSID': '224567', "Date Added": time_stamp()},
-{'FirstName': 'Linda', 'LastName': 'Matthew', 'SSID': '123456', "Date Added": time_stamp()},
-{'FirstName': 'Sandra', 'LastName': 'Parkin', 'SSID': '123456', "Date Added": time_stamp()},
-{'FirstName': 'Bob', 'LastName': 'Henry', 'SSID': '666666', "Date Added": time_stamp()},
-{'FirstName': 'Silvia', 'LastName': 'Perkin', 'SSID': '676767', "Date Added": time_stamp()}]
+"""In Python terms a dictionary {} is a record in MongoDB and in MongoDB terms it's called a document.
+
+A Python parent dictionary {} can have nested dictionaries and lists, and nested dictionaries can have nested lists,
+can have nested dictionaries, and nested lists.
+
+[{[{[]}]}]
+"""
+# BSON form for loading dictionaries/docs to MongoDB is a List of dictionaries
+it_staff = [
+    {"Date Added": time_stamp(), 'user_id': 1, 'username': 'xvu', 'Unit': 'ES', 'Title':['DBA'], 'first_name': 'Xuong', 'last_name': 'Vu'},
+    {"Date Added": time_stamp(),'user_id': 2, 'username': 'hmaldonado', 'Unit': 'ES', 'Title': ['Sys Admin', 'DBA',
+        {'Skills': ['Linux', 'Oracle DB', 'Windows IIS']}], 'first_name': 'Hector', 'last_name': 'Maldonado'},
+    {"Date Added": time_stamp(), 'user_id': 3, 'username': 'rapodaca', 'Unit': 'ES', 'Title': ['Webmaster'], 'first_name': 'Ray', 'last_name': 'Apodaca'}
+]
 
 # Create a second database 'library_members'
 dbname = db_conn.DATABASE_CONFIG['MONGO_DB2']
 db = client[dbname]
 
-if db.members.count() >= 0:
+if db.staff.count() >= 0:
     # Drop 'members' collection
-    db.members.drop()
-    print(f"Members collection has been dropped! {db.members.count()}")
+    db.staff.drop()
+    print(f"Members collection has been dropped! {db.staff.count()}")
 
 # Use for loop to read and insert from a dictionary
-for member in dictList:
-    r = db.members.insert_one(member)
+for member in it_staff:
+    r = db.staff.insert_one(member)
 
 
 # -------------------------------- End of File --------------------------------
