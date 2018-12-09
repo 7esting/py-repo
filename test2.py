@@ -29,9 +29,9 @@ for name in names:
 
 # Array put in a json file
 [
-    "Sam",
-    "Hector",
-    "Ana"
+    "Harry",
+    "Moe",
+    "Curly"
     ]
 
 """
