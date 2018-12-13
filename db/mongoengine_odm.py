@@ -29,8 +29,8 @@ MongoEngine database connection registration
 --------------------------------------------
 Option 1: mongoengine.register_connection(alias='directory', name='library_members')
 Option 2: Use the mongoengine.connect(...)
-          This option allows you to specify db, user, password, uri, auth..
-          connect(db=client[dbname],
+          This option allows you to specify bin, user, password, uri, auth..
+          connect(bin=client[dbname],
                 host=db_conn.DATABASE_CONFIG['MONGO_URI'],
                 username='webapp',
                 password='pwd123',
@@ -49,8 +49,9 @@ dbname = db_conn.DATABASE_CONFIG['MONGO_DB2']
 print(f"{dbname} : {type(dbname)}")
 print(type(db_conn.DATABASE_CONFIG['MONGO_URI']))
 
-# MongoEngine.connect db connection string registration
-#connect(db=client[dbname], host=db_conn.DATABASE_CONFIG['MONGO_URI'], username='webapp', password='pwd123', authentication_source='admin')
+# MongoEngine.connect bin connection string registration
+#connect(bin=client[dbname], host=db_conn.DATABASE_CONFIG['MONGO_URI'],
+#           username='webapp', password='pwd123', authentication_source='admin')
 mongoengine.connect(db=dbname, host=db_conn.DATABASE_CONFIG['MONGO_URI'])
 
 # Class name ==> Collection name.  Overridden by meta {..}
@@ -86,7 +87,7 @@ def main():
     # Option 1:
     #global_init()
     # Option 2: Use the mongoengine.connect(...) see above
-    #           This option allows you to specify db, user, password, uri, auth...
+    #           This option allows you to specify bin, user, password, uri, auth...
 
     # Instantiate Users objects
     # usr1: <type hint>

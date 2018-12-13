@@ -79,3 +79,21 @@ while True:
     response = input()
     if int(response) % 7 == 0:
         break
+
+vowels = ['a', 'e', 'i', 'o', 'u']
+fname = "Guido"
+fname = list(fname)
+
+for v in vowels:
+    for i in fname:
+        if v == i:
+            print(f"Vowel in {fname}: {v}")
+
+if ('a' and 'e') or ('a' and 'i') in fname: # and, or does not work here
+    print(f"Has vowels")
+elif 'a' and 'e' in fname:
+    print(f"Has 'a' & 'e' vowels.")
+else:
+    print(f"Conditions not met.")
+
+

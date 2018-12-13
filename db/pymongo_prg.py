@@ -15,7 +15,8 @@ to the length prefixes and explicit array indices.
 #from pymongo import MongoClient
 import pymongo
 from config_settings import db_config as db_conn
-import datetime, pytz
+import datetime
+import pytz
 
 # --------------------------- Function Definitions ----------------------------
 
@@ -32,14 +33,14 @@ def time_stamp():
 # client = pymongo.MongoClient(conn_str)
 
 # Create database 'the_small_bookstore' in MongoDB
-# db = client.the_small_bookstore
+# bin = client.the_small_bookstore
 
 client = pymongo.MongoClient(db_conn.DATABASE_CONFIG['MONGO_URI'])
 dbname = db_conn.DATABASE_CONFIG['MONGO_DB1']
 db = client[dbname]
 
-# db.<collection-name>.count()
-print(f"db.books.count: {db.books.count()}")
+# bin.<collection-name>.count()
+print(f"bin.books.count: {db.books.count()}")
 
 if db.books.count() >= 0:
     # Drop 'books' collection
@@ -76,12 +77,12 @@ if db.magazines.count() < 3:
 else:
     print("Magazines already on shelf.")
 
-# book = db.books.find_one({'isbn': '73738584947384'})
+# book = bin.books.find_one({'isbn': '73738584947384'})
 # print(book, type(book))
 # book['favorited_by'] = []
 # book['favorited_by'].append(100)
-# db.books.update({'_id': book.get('_id')}, book)
-# book = db.books.find_one({'isbn': '73738584947384'})
+# bin.books.update({'_id': book.get('_id')}, book)
+# book = bin.books.find_one({'isbn': '73738584947384'})
 # print(book)
 
 db.books.update({'isbn': '181819884728473'}, {'$addToSet': {'favorited_by': 120}})
@@ -154,8 +155,8 @@ else:
     print(f"Specific string search: {type(doc)}")
 
 # Drop 'library_members' database by dropping all of it's collections
-# db.dictionary_collection_doc.drop()
-# db.dictionary_collection_movie.drop()
+# bin.dictionary_collection_doc.drop()
+# bin.dictionary_collection_movie.drop()
 
 """In Python terms a dictionary {} is a record in MongoDB and in MongoDB terms it's called a document.
 
@@ -168,7 +169,7 @@ can have nested dictionaries, and nested lists.
 it_staff = [
     {"Date Added": time_stamp(), 'user_id': 1, 'username': 'xvu', 'Unit': 'ES', 'Title':['DBA'], 'first_name': 'Xuong', 'last_name': 'Vu'},
     {"Date Added": time_stamp(),'user_id': 2, 'username': 'hmaldonado', 'Unit': 'ES', 'Title': ['Sys Admin', 'DBA',
-        {'Skills': ['Linux', 'Oracle DB', 'Windows IIS']}], 'first_name': 'Hector', 'last_name': 'Maldonado'},
+        {'Skills': ['Linux', 'Oracle bin', 'Windows IIS']}], 'first_name': 'Hector', 'last_name': 'Maldonado'},
     {"Date Added": time_stamp(), 'user_id': 3, 'username': 'rapodaca', 'Unit': 'ES', 'Title': ['Webmaster'], 'first_name': 'Ray', 'last_name': 'Apodaca'}
 ]
 

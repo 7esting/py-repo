@@ -93,7 +93,7 @@ def main():
                     raise
 
         if response == 0:
-            os.system("/usr/bin/clear")
+            #os.system("/usr/bin/clear")
             #os.system("cls")
 
         if response == 3:
