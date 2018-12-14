@@ -2,7 +2,7 @@
 
 '''
 Python Quick Reference
-https://github.com/justmarkham/PyRefCodeNotes-reference
+https://github.com/justmarkham/LearnPythonNotes-reference
 
 By Kevin Markham (kevin@dataschool.io)
 http://www.dataschool.io
@@ -380,16 +380,16 @@ family['kids'].remove('lisa')       # removes 'lisa'
 empty_set = set()
 
 # create a set
-languages = {'PyRefCodeNotes', 'r', 'java'}         # create a set directly
-snakes = set(['cobra', 'viper', 'PyRefCodeNotes'])  # create a set from a list
+languages = {'LearnPythonNotes', 'r', 'java'}         # create a set directly
+snakes = set(['cobra', 'viper', 'LearnPythonNotes'])  # create a set from a list
 
 # examine a set
 len(languages)              # returns 3
-'PyRefCodeNotes' in languages       # returns True
+'LearnPythonNotes' in languages       # returns True
 
 # set operations
-languages & snakes          # returns intersection: {'PyRefCodeNotes'}
-languages | snakes          # returns union: {'cobra', 'r', 'java', 'viper', 'PyRefCodeNotes'}
+languages & snakes          # returns intersection: {'LearnPythonNotes'}
+languages | snakes          # returns union: {'cobra', 'r', 'java', 'viper', 'LearnPythonNotes'}
 languages - snakes          # returns set difference: {'r', 'java'}
 snakes - languages          # returns set difference: {'cobra', 'viper'}
 

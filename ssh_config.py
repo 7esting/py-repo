@@ -1,4 +1,4 @@
-#!/usr/bin/env PyRefCodeNotes
+#!/usr/bin/env LearnPythonNotes
 
 # (c) 2014, Tomas Karasek <tomas.karasek@digile.fi>
 #

@@ -1,4 +1,4 @@
-#!/usr/bin/env PyRefCodeNotes
+#!/usr/bin/env LearnPythonNotes
 """
 This is a docstring to describe the purpose of program.  The program can be
 used as a reference to Python syntax.

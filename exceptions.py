@@ -1,4 +1,4 @@
-#!/usr/bin/env PyRefCodeNotes
+#!/usr/bin/env LearnPythonNotes
 """
 Python Exception Object:
     - Provides a description of the error

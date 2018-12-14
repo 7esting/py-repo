@@ -1,4 +1,4 @@
-#!/usr/bin/env PyRefCodeNotes
+#!/usr/bin/env LearnPythonNotes
 # -----------------------------------------------------------------------------
 import os
 import csv
@@ -284,7 +284,7 @@ if __name__ == "__main__":
 #     # Note: null => none and false => False
 #     # Since all characters are ascii there is not need to worry about encoding
 #     tron = json.loads(value)
-#     pprint(f"Print json => PyRefCodeNotes dict: \n{tron}")
+#     pprint(f"Print json => LearnPythonNotes dict: \n{tron}")
 #     pprint(f"Print dictionary key value: {tron['title']}")
 #
 #     # Convert movies.json file to a valid Python text string and store in a

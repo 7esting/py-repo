@@ -1,4 +1,4 @@
-#!/usr/bin/env PyRefCodeNotes
+#!/usr/bin/env LearnPythonNotes
 
 # An alarm has a 4 digit code on a keypad [0-9] with 10 digits
 # How many posible purmutations can we have, when order matters.
