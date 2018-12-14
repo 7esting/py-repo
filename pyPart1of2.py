@@ -68,6 +68,7 @@ Package is basically a directory with files.
 # from <dir.file = package.module> import <class_name | method (case sensitive)>
 import math
 from pprint import pprint
+import random
 
 # List available classes, and functions
 print(dir(math))
@@ -182,6 +183,17 @@ matrix = [[1,2,3],[4,5,6],[7,8,9]]
 first_col = [row[0] for row in matrix]
 print(first_col)
 
+# Enumerate is a built - in function of Python. t allows us to loop over
+# something and have an automatic counter.
+fruits = ['apple', 'banana', 'orange', 'papaya', 'grapes']
+
+# Another use case for enumerate
+for enum_counter, i in enumerate(range(5), 1):
+    print(f"{enum_counter}: {random.choice(fruits)}")
+
+fruit_list = list(enumerate(fruits, 1))
+# output: [(1, 'apple'), (2, 'banana'), ...]
+print(f"Enumerated List: {fruit_list}")
 
 print("# ---------------------------- Dictionaries -------------------------------")
 # Dictionary - aka Hashtable, allows mapping/binding of key-values pairs

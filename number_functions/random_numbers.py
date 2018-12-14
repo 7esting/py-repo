@@ -80,5 +80,7 @@ if __name__ == '__main__':
     # Random element from a list
     outcomes = ["rock", 'paper', 'scissors']
 
-    for i in range(20):
-        print(random.choice(outcomes))
+    # Enumerate is a built - in function of Python. t allows us to loop over
+    # something and have an automatic counter.
+    for enum_counter, i in enumerate(range(20), 1):
+        print(f"{enum_counter}: {random.choice(outcomes)}")

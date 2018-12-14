@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="720a341f-4e21-4dfe-b46d-64f20c0ed0aa" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/mytemplate.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/number_functions/random_walk.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/PyRefCodeNotes.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/PyRefCodeNotes.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/mongoengine_odm.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/mongoengine_odm.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/pymongo_prg.py" beforeDir="false" afterPath="$PROJECT_DIR$/db/pymongo_prg.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/menu_prg.py" beforeDir="false" afterPath="$PROJECT_DIR$/menu_prg.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/number_functions/random_numbers.py" beforeDir="false" afterPath="$PROJECT_DIR$/number_functions/random_numbers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vars_if_while.py" beforeDir="false" afterPath="$PROJECT_DIR$/vars_if_while.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/number_functions/random_walk.py" beforeDir="false" afterPath="$PROJECT_DIR$/number_functions/random_walk.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pyPart1of2.py" beforeDir="false" afterPath="$PROJECT_DIR$/pyPart1of2.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -26,8 +21,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pyPart1of2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1600">
-              <caret line="218" column="48" lean-forward="true" selection-start-line="218" selection-start-column="48" selection-end-line="218" selection-end-column="48" />
+            <state relative-caret-position="141">
+              <caret line="222" column="39" selection-start-line="222" selection-start-column="34" selection-end-line="222" selection-end-column="39" />
+              <folding>
+                <element signature="e#2213#2224#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -47,8 +45,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/number_functions/random_numbers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1625">
-              <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+            <state relative-caret-position="1700">
+              <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -56,8 +54,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/number_functions/random_walk.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3" selection-start-column="3" selection-end-column="3" />
+            <state relative-caret-position="1181">
+              <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
             </state>
           </provider>
         </entry>
@@ -90,6 +88,7 @@
       <find>my_dictionary</find>
       <find>paramiko</find>
       <find>bin</find>
+      <find>tuple</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -109,7 +108,6 @@
         <option value="$PROJECT_DIR$/data/foo.txt" />
         <option value="$PROJECT_DIR$/Person.py" />
         <option value="$PROJECT_DIR$/exception_ref.py" />
-        <option value="$PROJECT_DIR$/pyPart1of2.py" />
         <option value="$PROJECT_DIR$/prime_numbers.py" />
         <option value="$PROJECT_DIR$/test.pyi" />
         <option value="$PROJECT_DIR$/test.py" />
@@ -129,15 +127,17 @@
         <option value="$PROJECT_DIR$/db/pymongo_prg.py" />
         <option value="$PROJECT_DIR$/mytemplate.py" />
         <option value="$PROJECT_DIR$/vars_if_while.py" />
+        <option value="$PROJECT_DIR$/pyPart1of2.py" />
         <option value="$PROJECT_DIR$/number_functions/random_numbers.py" />
         <option value="$PROJECT_DIR$/number_functions/random_walk.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="960" />
-    <option name="width" value="960" />
-    <option name="height" value="1032" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1238" />
+    <option name="y" value="5" />
+    <option name="width" value="683" />
+    <option name="height" value="1050" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -146,7 +146,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -168,6 +167,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -206,7 +206,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.random_numbers">
+  <component name="RunManager" selected="Python.random_walk">
     <configuration name="file_io" type="PythonConfigurationType" factoryName="Python">
       <module name="PyRefCodeNotes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -312,6 +312,27 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="random_walk" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="PyRefCodeNotes" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/number_functions" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/number_functions/random_walk.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="vars_if_while" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="PyRefCodeNotes" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -333,36 +354,22 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Unittests in test.py" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
-      <module name="PyRefCodeNotes" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;$PROJECT_DIR$/test.py&quot;" />
-      <option name="_new_targetType" value="&quot;PATH&quot;" />
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Python.file_io" />
       <item itemvalue="Python.pyPart1of2" />
       <item itemvalue="Python.pymongo_prg" />
       <item itemvalue="Python.mongoengine_odm" />
       <item itemvalue="Python.random_numbers" />
-      <item itemvalue="Python tests.Unittests in test.py" />
       <item itemvalue="Python.vars_if_while" />
+      <item itemvalue="Python.random_walk" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.random_walk" />
         <item itemvalue="Python.random_numbers" />
         <item itemvalue="Python.vars_if_while" />
         <item itemvalue="Python.pymongo_prg" />
         <item itemvalue="Python.mongoengine_odm" />
-        <item itemvalue="Python tests.Unittests in test.py" />
       </list>
     </recent_temporary>
   </component>
@@ -454,7 +461,14 @@
       <option name="project" value="LOCAL" />
       <updated>1544391993092</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Clean-up">
+      <created>1544674642008</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1544674642009</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -473,15 +487,15 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="960" y="0" width="960" height="1032" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49518305" visible="true" weight="0.24095023" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49518305" weight="0.31108597" />
       <window_info id="Structure" order="1" sideWeight="0.50481695" side_tool="true" weight="0.16094674" />
       <window_info id="Favorites" order="2" sideWeight="0.50289017" side_tool="true" weight="0.16094674" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32779622" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39187574" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.38362575" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3970742" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -493,7 +507,7 @@
       <window_info anchor="bottom" id="Docker" order="11" weight="0.32865497" />
       <window_info anchor="bottom" id="Pylint" order="12" />
       <window_info active="true" anchor="bottom" id="GitHub Pull Requests" order="13" weight="0.32890365" />
-      <window_info anchor="bottom" id="Messages" order="14" weight="0.32890365" />
+      <window_info anchor="bottom" id="Messages" order="14" weight="0.32855436" />
       <window_info anchor="bottom" id="Thumbnails" order="15" weight="0.32982457" />
       <window_info anchor="bottom" id="Inspection Results" order="16" weight="0.32890365" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -816,6 +830,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/vars_if_while.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="91" column="72" selection-start-line="91" selection-start-column="72" selection-end-line="91" selection-end-column="72" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/number_functions/recursion.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1375">
@@ -833,31 +854,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/pyPart1of2.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1600">
-          <caret line="218" column="48" lean-forward="true" selection-start-line="218" selection-start-column="48" selection-end-line="218" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vars_if_while.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="444">
-          <caret line="91" column="72" selection-start-line="91" selection-start-column="72" selection-end-line="91" selection-end-column="72" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/number_functions/random_numbers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1625">
-          <caret line="65" lean-forward="true" selection-start-line="65" selection-end-line="65" />
+        <state relative-caret-position="1700">
+          <caret line="68" column="42" selection-start-line="68" selection-start-column="42" selection-end-line="68" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyPart1of2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="222" column="39" selection-start-line="222" selection-start-column="34" selection-end-line="222" selection-end-column="39" />
+          <folding>
+            <element signature="e#2213#2224#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/number_functions/random_walk.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3" selection-start-column="3" selection-end-column="3" />
+        <state relative-caret-position="1181">
+          <caret line="62" column="42" lean-forward="true" selection-start-line="62" selection-start-column="42" selection-end-line="62" selection-end-column="42" />
         </state>
       </provider>
     </entry>
