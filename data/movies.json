@@ -1,0 +1,12 @@
+{
+  "title" : "Movie name",
+  "release_year" : 1976,
+  "won_oscar" : false,
+  "actors" : ["Sylvester Stalone", "Uma Thurman"],
+  "credits" : {
+        "director" : "Andrew Lots",
+        "writer" : "mimi miss",
+        "composer" : "Myhcael Nyman",
+        "cinematographer" : "Slatan Ibra"
+        }
+}
