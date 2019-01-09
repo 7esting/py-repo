@@ -1,5 +1,21 @@
+#!/usr/bin/env python
+__author__ = "Me, myself, Irene"
+__copyright__ = "Copyright 2018"
+__credits__ = ["Socratica", "Udemy", "Python.org"]
+__license__ = "GPL"
+__version__ = "1.0.1"
+__maintainer__ = "Hector"
+__email__ = "hector@hector.com"
+__status__ = "TEST"
 """
+Change Log:
+Name                    Date         Comment(s)
+======================  ===========  ==========================================
+Diego Armando Maradona  12-DEC-2018  Program/script created
+
+===============================================================================
 Docstring
+
 
 project_root/
 │
@@ -36,6 +52,8 @@ import Game.Level.over
 import Game.Level.start, Game.Level.load
 # Pythonic: Yes
 from Game.Level import start, over # help(start)
+
+
 
 """
 # ----------- Import Packages, and/or Modules: Classes, & Functions -----------

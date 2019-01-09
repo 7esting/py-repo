@@ -1,8 +1,4 @@
 Plain Text
-==========
 XML
-==========
 JSON
-==========
 Source Code
-==========

@@ -3,16 +3,6 @@
 This is a docstring to describe the purpose of program.  The program can be
 used as a reference to Python syntax.
 """
-# -----------------------------------------------------------------------------
-__author__ = "Socratica, Udemy, and myself"
-__copyright__ = "Copyright 2018, Learning Python Project"
-__credits__ = ["Socratica", "Udemy", "The Web",
-                    "me"]
-__license__ = "GPL"
-__version__ = "1.0.1"
-__maintainer__ = "Hector Maldonado"
-__email__ = "7esting@gmail.com"
-__status__ = "Dev"
 # ---------------------------- Python3 -------------------------------
 # URL  https://docs.python.org/3/tutorial/introduction.html
 # Syntax and variables
@@ -43,9 +33,15 @@ Primitive Data Structures
 
 Non-Primitive Data Structures
 - Lists/Arrays
+  ~ An ordered set of mutable values
   ~ List Comprehensions (a concise way to create lists)
+  ~ team = ["sue", "james", "alex"]
 - Tuples
+  ~ An ordered set of immutable values
+  ~ elementary = ("first", "second", "third")
 - Dictionary
+  ~ An unordered set of key/value pairs
+  ~ database = { "db" : "HR", "host" : "db1", "port" : 1521} 
 - Sets
 - Files
 
@@ -99,9 +95,10 @@ print("2^(0.5+0.5) => %f" % X**(a+b))
 print("# ---------------------------- Strings -------------------------------")
 # Slicing strings
 myName='hector'
-print(myName[:3])
-print(myName[0:3])
-print(myName[3:])
+print(f"Size of myName: {len(myName)}")
+print(myName[:3]) # print from index 0 -> 2
+print(myName[0:3]) # print from index 0 -> 2
+print(myName[3:]) # print from index 3 -> len(myName)
 capFirstLtrName = myName.capitalize()
 print(capFirstLtrName)
 x=myName.split('t')

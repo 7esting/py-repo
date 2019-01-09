@@ -8,7 +8,7 @@ LOG_FORMAT = '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
 LOG_DIR = '/opt/'
 LOG_FILE = "/opt/Lumberjack.log"
 # If "level" is set to error, you will only see "error" and "critical" log messages. 
-# W/o filemode, defautl is to append to log
+# W/o filemode, default is to append to log
 logging.basicConfig(filename = LOG_FILE, level = logging.DEBUG, format = LOG_FORMAT, filemode = 'w')
 #logging.basicConfig(filename = LOG_FILE, level = logging.DEBUG, filemode = 'w')
 

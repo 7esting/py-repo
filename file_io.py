@@ -86,7 +86,7 @@ if __name__ == "__main__":
         #  '+' open a disk file for updating (reading and writing)
         #  'a' open for writing, appending to the end of the file if it exists
         #  'r' read only
-        with open(TXT_FILE, mode="w+", encoding="utf-8") as myfile:
+        with open(TXT_FILE, mode="r+", encoding="utf-8") as myfile:
             # Verify file exists prior to reading/writting
             if os.path.isfile(TXT_FILE):  # Return True if file exists
                 print(f"\nFile ==> {myfile.name} was created!")
@@ -101,9 +101,10 @@ if __name__ == "__main__":
             print("Tell the byte at which the file cursor is:", myfile.tell())
             # Write to file
             for line in txt_to_myfile:
-                # file.write(line + "\n")
-                print(line, file=myfile)
-                print(10 * "=", file=myfile)
+                myfile.write(line + "\n")
+                ## Another way to write list items to file
+                # print(line, file=myfile)
+                # print(10 * "=", file=myfile)
             # Read file
             print("Tell the byte at which the file cursor is:", myfile.tell())
             myfile.seek(0)
@@ -117,7 +118,7 @@ if __name__ == "__main__":
             else:
                 print(f"The text file does not exist!")
 
-            print(myfile.read())  # Causes an error ir file opened for append only, except with "a+"
+            print(myfile.read())  # Causes an error if file opened for append only, except with "a+"
             print("Tell the byte at which the file cursor is:", myfile.tell())
             # myfile.close() # Uncomment to test IO exceptions
             #print("File closed?", myfile.closed)
@@ -297,7 +298,7 @@ if __name__ == "__main__":
 #     movie2['title'] = "Minority Report"
 #     movie2['director'] = "Steven Spielberg"
 #     movie2['composer'] = "John Williams"
-#     movie2['actors'] = ["Tom Curise", "Colin Farrell",
+#     movie2['actors'] = ["Tom Cruise", "Colin Farrell",
 #                         "Samantha Morton", "Max von Sydow"]
 #     movie2['is_awesome'] = True
 #     movie2['budget'] = 102000000
