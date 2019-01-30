@@ -34,6 +34,6 @@ Some text.
 
 Some more text.
 
-###### Greyed heading
+###### Greyed heading/text
 
 Even more text.  But why?
