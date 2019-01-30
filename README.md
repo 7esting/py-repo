@@ -30,7 +30,7 @@ Image
 
 Some text.
 
-##### heading
+##### Heading
 
 Some more text.
 
