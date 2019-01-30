@@ -33,6 +33,8 @@ Some more text.
 ###### Small greyed text
 
 Even more text.  But why?
+
+https://guides.github.com/features/mastering-markdown/
 ##
 
 Last Updated by @7esting :calendar: 01-JAN-2019
