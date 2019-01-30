@@ -1,5 +1,5 @@
 
-## 1.0 Header Title
+## 1.0 Header Title <img src="94C4405D-5EF8-4792-A704-F7EA7EDC851A.png" title="github">
 
 This is just text.  **Bold** text. [url link to github](https://github.com)
 
@@ -22,10 +22,6 @@ CLI `docker` command to list images
 ```
 docker images
 ```
-
-Image
-<img src="94C4405D-5EF8-4792-A704-F7EA7EDC851A.png" title="github">
-
 #### 1.1.1 Sub sub heading
 
 Some text.
