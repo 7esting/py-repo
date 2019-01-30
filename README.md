@@ -1,7 +1,7 @@
 
 ## Header Title
 
-This is just text.  **Bold** text. [url link to github](https://github".com)
+This is just text.  **Bold** text. [url link to github](https://github.com)
 
 ### Subheader
 
