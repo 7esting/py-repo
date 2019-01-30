@@ -1,4 +1,4 @@
-## 
+## <img src="Python-logo.png">
 
 [Python](https://docs.python.org/3/tutorial/index.html) is an interpreted language, which can save you considerable time during
 program development because no compilation and linking is necessary.
