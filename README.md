@@ -30,10 +30,10 @@ Image
 
 Some text.
 
-##### text
-\**text
+##### Small bold text
+\*\*text\*\*
 Some more text.
 
-###### Greyed text
+###### Small greyed text
 
 Even more text.  But why?
