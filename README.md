@@ -1,9 +1,9 @@
 
-## Header Title
+## 1.0 Header Title
 
 This is just text.  **Bold** text. [url link to github](https://github.com)
 
-### Subheader
+### 1.1 Subheading
 
 List
 * item one
@@ -14,3 +14,8 @@ CLI `docker` command to list images
 ```
 docker images
 ```
+
+Image
+<img src="../images/vote.png" title="vote">
+
+#### 1.1.1 Sub sub heading
