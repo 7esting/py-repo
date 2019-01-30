@@ -30,10 +30,10 @@ Image
 
 Some text.
 
-##### Heading
-
+##### text
+\**text
 Some more text.
 
-###### Greyed heading/text
+###### Greyed text
 
 Even more text.  But why?
