@@ -39,4 +39,4 @@ https://guides.github.com/features/mastering-markdown/
 ~~This is the end~~
 ##
 
-Last Updated on :calendar: 30-JAN-2019 by @7esting
+:calendar:Last Updated on 30-JAN-2019 by @7esting
