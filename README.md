@@ -37,6 +37,10 @@ Even more text.  But why?
 https://guides.github.com/features/mastering-markdown/
 
 ~~This is the end~~
+
+Tasks
+- [x] This is a complete item
+- [ ] This is an incomplete item
 ##
 
 :calendar:Last Updated on 30-JAN-2019 by @7esting
