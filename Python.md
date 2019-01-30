@@ -15,7 +15,7 @@ statement;
 ending brackets;
 - no variable or argument declarations are necessary.
 
-Python is extensible: if you know how to program in C it is easy to add a new
+**Python is extensible**: if you know how to program in C it is easy to add a new
 built-in function or module to the interpreter, either to perform critical
 operations at maximum speed, or to link Python programs to libraries that may
 only be available in binary form (such as a vendor-specific graphics library).
