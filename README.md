@@ -35,6 +35,8 @@ Some more text.
 Even more text.  But why?
 
 https://guides.github.com/features/mastering-markdown/
+
+~~THIS is the end~~
 ##
 
-Last Updated by @7esting :calendar: 01-JAN-2019
+Last Updated by @7esting :calendar: 30-JAN-2019
