@@ -20,7 +20,6 @@ Image
 
 #### 1.1.1 Sub sub heading
 Some text.
-
 ##### heading
 Some more text.
 ###### heading
